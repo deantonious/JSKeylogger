@@ -7,13 +7,13 @@ Simple Node JS receiver + injectable JavaScript code.
 Clone the repository with
 
 ```bash
-npm install
+git clone https://github.com/deantonious/JSKeylogger.git
 ```
 
 Install dependencies with
 
 ```bash
-git clone https://github.com/deantonious/JSKeylogger.git
+npm install
 ```
 
 Run the server with
