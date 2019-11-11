@@ -1,6 +1,6 @@
 # JSKeylogger
 
-Simple Node JS receiver + injectable JavaScript code.
+Simple NodeJS reception server + injectable JavaScript code + Bettercap caplet.
 
 ## Setup
 
@@ -13,6 +13,7 @@ git clone https://github.com/deantonious/JSKeylogger.git
 Install dependencies with
 
 ```bash
+cd server
 npm install
 ```
 
@@ -22,7 +23,12 @@ Run the server with
 npm start
 ```
 
-And inject the file [inject.js](inject.js)
+Host the inject.js file somewhere accessible and inject the file with 
+
+```bash
+cd ../caplet
+bettercap -caplet injector.cap
+```
 
 ## Disclaimer
 

